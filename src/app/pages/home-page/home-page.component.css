@@ -1,0 +1,23 @@
+#golden_circle{
+    width:80%;
+    margin:auto;
+}
+#why{
+    display:flex;
+
+}
+#what{
+    display:flex;
+
+}
+#how{
+    display:flex;
+
+}
+.heading{
+    font-size:50px;
+}
+.content{
+    text-align: justify;
+    width:50%;
+}
