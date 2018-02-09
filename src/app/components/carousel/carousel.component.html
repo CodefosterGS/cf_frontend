@@ -1,0 +1,9 @@
+<section>
+    <div class="featured-post-carousel" >
+        <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                  <img src="{{ slide.img }}" alt="">
+            </div>
+        </ngx-slick>
+    </div>
+  </section>
