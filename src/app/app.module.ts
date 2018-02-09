@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ExperimentComponent } from './components/experiment/experiment.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
 
 const appRoutes: Routes =[
   {path:'',component: HomePageComponent,pathMatch:'full'},
-  {path:'test',component:ExperimentComponent, pathMatch:'full'}
+  {path:'test',component:ExperimentComponent, pathMatch:'full'},
+  {path:'about',component:AboutPageComponent, pathMatch:'full'}
 ]
 
 
@@ -18,7 +20,8 @@ const appRoutes: Routes =[
     AppComponent,
     FooterComponent,
     ExperimentComponent,
-    HomePageComponent
+    HomePageComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule,
