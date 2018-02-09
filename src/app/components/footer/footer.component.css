@@ -1,0 +1,17 @@
+#left
+{
+    float: left;
+}
+div img
+{
+    width: 8%;
+}
+#right
+{
+    float:right;
+}
+.footer
+{
+    display: block;
+    background-color: blue;
+}
