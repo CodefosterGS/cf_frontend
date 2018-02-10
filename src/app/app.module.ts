@@ -11,11 +11,13 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 
 const appRoutes: Routes =[
   {path:'',component: HomePageComponent,pathMatch:'full'},
   {path:'test',component:ExperimentComponent, pathMatch:'full'},
-  {path:'about',component:AboutPageComponent, pathMatch:'full'}
+  {path:'about',component:AboutPageComponent, pathMatch:'full'},
+  {path:'contact',component:ContactPageComponent, pathMatch:'full'}
 ]
 
 
@@ -26,8 +28,9 @@ const appRoutes: Routes =[
     ExperimentComponent,
     HomePageComponent,
     NavBarComponent,
-    CarouselComponent
-    AboutPageComponent
+    CarouselComponent,
+    AboutPageComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,

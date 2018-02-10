@@ -1,17 +1,14 @@
-#left
+footer
 {
-    float: left;
+    background-color: rgb(128, 128, 136);
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-div img
+footer div img
 {
-    width: 8%;
-}
-#right
-{
-    float:right;
-}
-.footer
-{
-    display: block;
-    background-color: blue;
+    padding-top:5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 3%;
 }
