@@ -9,10 +9,16 @@ import { ExperimentComponent } from './components/experiment/experiment.componen
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { EventsPageComponent } from './pages/events-page/events-page.component';
+import { TeamProfileCardComponent } from './components/team-profile-card/team-profile-card.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const appRoutes: Routes =[
   {path:'',component: HomePageComponent,pathMatch:'full'},
-  {path:'test',component:ExperimentComponent, pathMatch:'full'}
+  {path:'test',component:ExperimentComponent, pathMatch:'full'},
+  {path:'events',component:EventsPageComponent, pathMatch:'full'}
+
 ]
 
 
@@ -22,7 +28,11 @@ const appRoutes: Routes =[
     ExperimentComponent,
     HomePageComponent,
     NavBarComponent,
-    CarouselComponent
+    CarouselComponent,
+    EventsPageComponent,
+    TeamProfileCardComponent,
+    ContactFormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

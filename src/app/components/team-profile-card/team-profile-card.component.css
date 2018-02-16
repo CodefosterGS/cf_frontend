@@ -1,0 +1,49 @@
+
+  .card-profile-candidate-everything {
+    display: flex;
+    flex-direction: row;
+    width:90%;
+    margin:auto;
+    margin-top:3rem;
+  }
+
+  .card-profile-candidate-everything .wrapper {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 1rem;
+    background: white;
+    border-radius: 4px;
+    margin: 5px;
+    background: rgba(255, 255, 255, 0.65);
+    transition: all .2s;
+    border:1px solid black;
+
+  }
+  .card-profile-candidate-everything .wrapper:hover {
+    transform: scale(1.02);
+  }
+  .card-profile-candidate-everything .wrapper img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    max-height: 100%;
+    max-width: 90%;
+    object-fit: cover;
+  }
+  .card-profile-candidate-everything .wrapper .name {
+    font-size: 2rem;
+  }
+  .card-profile-candidate-everything .wrapper .party {
+    font-size: 1.3rem;
+    color: #bbb;
+  }
+  .card-profile-candidate-everything .wrapper .desc {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+    opacity: 0.7;
+  }
+  p{
+    margin:2px;
+  }
+  

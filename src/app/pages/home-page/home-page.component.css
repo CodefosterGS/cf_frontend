@@ -1,23 +1,37 @@
 #golden_circle{
     width:80%;
     margin:auto;
+    display:flex;
+    flex-direction: column;
+}
+.section-div{
+    margin-top:3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 #why{
-    display:flex;
 
 }
 #what{
-    display:flex;
+
 
 }
 #how{
-    display:flex;
-
+  
 }
 .heading{
-    font-size:50px;
+border-radius: 50%;
+width:300px;
+height:300px;
 }
 .content{
     text-align: justify;
     width:50%;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+
+}
+body{
+    width:100vw;
 }
