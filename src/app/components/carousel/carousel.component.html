@@ -3,6 +3,7 @@
         <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
             <div ngxSlickItem *ngFor="let slide of slides" class="slide">
                   <img src="{{ slide.img }}" alt="">
+                  <button> Read More</button>
             </div>
         </ngx-slick>
     </div>
