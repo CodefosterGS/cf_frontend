@@ -2,3 +2,7 @@
     width:50%;
     height:420px;
 }
+#content{
+    position: absolute;
+    top:50%;
+}
