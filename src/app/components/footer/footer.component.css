@@ -1,0 +1,170 @@
+footer {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .footer-distributed {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .shortcut {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+   .heading {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #000;
+    position: relative;
+    margin-top: 2.5rem;
+  }
+  
+  .footer-distributed .footer-links {
+    font-size: 1.5rem;
+  }
+  
+  .footer-distributed .heading::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background: #0073cf;
+    bottom: -10px;
+  }
+  
+  .footer-links a::before {
+    content: '>';
+    margin-right: 2px;
+    transform: scale(0.5);
+  }
+  
+  .footer-distributed .footer-links {
+    color: #ffffff;
+    color: #000;
+    margin: 0 0 10px;
+    padding: 0;
+  }
+  
+  .footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .footer-distributed .footer-company-name {
+    color: #8f9296;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-right p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 42px 0 0;
+    color: #ffffff;
+  }
+  
+  .footer-distributed form {
+    display: inline-block;
+  }
+  
+  .footer-distributed form input,
+  .footer-distributed form textarea {
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .footer-distributed form input {
+    height: 38px;
+    margin-bottom: 2rem;
+    width: 200px;
+  }
+  
+  .footer-distributed form textarea {
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-distributed form button {
+    border-radius: 3px;
+    background-color: #33383b;
+    color: #ffffff;
+    border: none;
+    padding: 1rem 2rem;
+  }
+  
+  .footer-bottom {
+    background-color: #090a0a;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    padding: 5px 0;
+  }
+  .footer-bottom p{
+    margin: 0;
+  }
+  
+  
+  @media screen and (max-width: 670px) {
+    .footer-wrapper {
+      flex-direction: column;
+    }
+  
+    .shortcut {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .shortcut .footer-left {
+      margin-right: 0;
+    }
+    .shortcut .footer-center {
+      margin-right: 0;
+    }
+  
+    .footer-logo {
+      margin: auto;
+    }
+  }
+  /* Smartphones (portrait) ----------- */
+  @media only screen and (max-width: 480px) {
+    .footer-wrapper {
+      flex-direction: column;
+    }
+  
+    .shortcut {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .shortcut .footer-left {
+      margin-right: 0;
+    }
+    .shortcut .footer-center {
+      margin-right: 0;
+    }
+  
+    .footer-logo {
+      margin: auto;
+    }
+  }
+  

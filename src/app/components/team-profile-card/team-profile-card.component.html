@@ -1,0 +1,8 @@
+<div class="card-profile-candidate-everything">
+    <div class="wrapper" *ngFor="let slide of slides">
+        <img src="{{slide.profilePictureURL}}" alt="Profile picture for the candidate">
+        <p class="name">{{slide.memberName}}</p>
+        <p class="party">{{slide.memberRank}}</p>
+        <p class="desc">{{slide.memberSkills}}</p>
+    </div>
+</div>
