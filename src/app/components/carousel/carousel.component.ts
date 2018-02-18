@@ -18,7 +18,7 @@ export class CarouselComponent implements OnInit {
   slides:any = [];
 
   getAndSetCarouselData() {
-    let url = "/events/featured";
+    let url = "api/events/featured";
     this.http.get(url).subscribe((data)=>{
       this.slides = [];
       if(data['status']){
@@ -26,7 +26,10 @@ export class CarouselComponent implements OnInit {
           let slide: any = {
             img: event.featured_img,
             date: event.start_date,
-            topic: event.title
+            topic: event.title,
+            start: event.start_data,
+            venue: event.venue,
+            
           }
           this.slides.push(slide);
         });

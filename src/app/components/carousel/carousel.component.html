@@ -2,7 +2,9 @@
     <div class="featured-post-carousel" >
         <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
             <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-                  <img src="{{ slide.img }}" alt="">
+                  <div class="overlay">
+                  <img src="{{ slide.img }}" alt=""/>
+                  </div>
                   <div class="featured-post-content">
                         <h1 class="featured-post-title">
                           {{slide.topic}}
@@ -13,7 +15,7 @@
                         <hr class="hr">
                         <div class="featured-post-meta">
                           <div class="date meta-item">
-                            {{slide.date}} &nbsp; | &nbsp; {{slide.venue}} &nbsp; | <div style="display: inline;" >{{slide.status}}</div>
+                            {{slide.start}} &nbsp; | &nbsp; {{slide.venue}} &nbsp; | <div style="display: inline" ><a href="#">Register</a></div>
                           </div>
                         </div>
                       </div>
