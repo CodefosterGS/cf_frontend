@@ -32,3 +32,6 @@ font-size: -webkit-xxx-large !important;
     font-size: -webkit-xxx-large !important;
     line-height: 0.5 !important;
 }
+.slide{
+    outline:none;
+}

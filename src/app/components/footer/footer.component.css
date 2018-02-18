@@ -3,27 +3,22 @@ footer {
   }
   
   .footer-distributed {
-    width: 90%;
+    width: 100%;
     padding: 20px;
   }
   
   .shortcut {
     display: flex;
+    width: 100%;
+    justify-content: space-around;
   }
-  .shortcut .footer-left {
-    margin-right: 5rem;
-  }
-  .shortcut .footer-center {
-    margin-right: 5rem;
-  }
-  
   .footer-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   
-  .footer-distributed .heading {
+   .heading {
     margin-bottom: 2rem;
     font-size: 2rem;
     color: #000;
@@ -120,7 +115,10 @@ footer {
     text-align: center;
     font-size: 1.5rem;
     color: white;
-    padding: 3px 0;
+    padding: 5px 0;
+  }
+  .footer-bottom p{
+    margin: 0;
   }
   
   

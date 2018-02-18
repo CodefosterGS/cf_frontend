@@ -3,7 +3,20 @@
         <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
             <div ngxSlickItem *ngFor="let slide of slides" class="slide">
                   <img src="{{ slide.img }}" alt="">
-                  <button> Read More</button>
+                  <div class="featured-post-content">
+                        <h1 class="featured-post-title">
+                          {{slide.topic}}
+                        </h1>
+                        <div class="featured-post-excerpt">
+                          <div class="article-everything"><p>{{slide.short_desc}}</p></div>
+                        </div>
+                        <hr class="hr">
+                        <div class="featured-post-meta">
+                          <div class="date meta-item">
+                            {{slide.date}} &nbsp; | &nbsp; {{slide.venue}} &nbsp; | <div style="display: inline;" >{{slide.status}}</div>
+                          </div>
+                        </div>
+                      </div>
             </div>
         </ngx-slick>
     </div>
