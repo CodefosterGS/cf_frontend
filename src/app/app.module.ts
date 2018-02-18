@@ -13,12 +13,14 @@ import { EventsPageComponent } from './pages/events-page/events-page.component';
 import { TeamProfileCardComponent } from './components/team-profile-card/team-profile-card.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { DescriptionComponent } from './components/description/description.component';
 
 const appRoutes: Routes =[
   {path:'',component: HomePageComponent,pathMatch:'full'},
   {path:'test',component:ExperimentComponent, pathMatch:'full'},
-  {path:'events',component:EventsPageComponent, pathMatch:'full'}
-
+  {path:'events',component:EventsPageComponent, pathMatch:'full'},
+  {path:'experiment',component:ExperimentComponent, pathMatch:'full'}
+  
 ]
 
 
@@ -32,7 +34,8 @@ const appRoutes: Routes =[
     EventsPageComponent,
     TeamProfileCardComponent,
     ContactFormComponent,
-    FooterComponent
+    FooterComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserModule,
