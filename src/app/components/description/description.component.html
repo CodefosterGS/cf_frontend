@@ -1,9 +1,11 @@
 <div class="container">
-  <div class="wrapper" *ngFor="let slide of discription">
+  <div class="wrapper">
     <header>
-      <h1>Event Name</h1>
+      dfsag
+      <h1>{{description.topic}}</h1>
       <div class="bio">
-        <img src="/assets/csgo.jpg" alt="background" class="bg">
+        daf
+        <img src="" alt="background" class="bg">
       </div>
     </header>
 
@@ -11,43 +13,46 @@
       <div class="data">
         <ul>
           <li>
-            {{slide.date}}
-            <span>Date</span>
+            {{description.dates}} - {{description.datee}}
+            <span>Times</span>
           </li>
           <li>
-            {{slide.time}}
-            <span>Time</span>
+              {{description.amount}}
+            <span>amount</span>
           </li>
           <li>
-            {{slide.venue}}
+            {{description.venue}}
             <span>Venue</span>
           </li>
+
         </ul>
       </div>
     </div>
     <div>
       <h1>Description</h1>
-      <p>{{ slide.dis}}.</p>
+      <p>{{ description.desc}}.</p>
     </div>
   </div>
-  <div>
-    <button onClick='form();'>Register</button>
-  </div>
-  <div>
-    <form action="" id="registerform">
-      <div>
-        <label for="name"> Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your name..">
-      </div>
-      <div>
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" placeholder="Your Email..">
-      </div>
-      <div>
-        <label for="contactno">Phone Number:</label>
-        <input type="text" id="number" name="number" placeholder="Your mobile number..">
-      </div>
-      <input type="submit" value="Submit">
-    </form>
+  <div *ngIf="description.active">
+    <div>
+      <button (click)="form()">Register</button>
+    </div>
+    <div>
+      <form action="" id="registerform">
+        <div>
+          <label for="name"> Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name..">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="Your Email..">
+        </div>
+        <div>
+          <label for="contactno">Phone Number:</label>
+          <input type="text" id="number" name="number" placeholder="Your mobile number..">
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
   </div>
 </div>

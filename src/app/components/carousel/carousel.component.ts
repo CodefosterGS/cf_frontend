@@ -18,7 +18,7 @@ export class CarouselComponent implements OnInit {
   slides:any = [];
 
   getAndSetCarouselData() {
-    let url = "/events/featured";
+    let url = "api/events/featured";
     this.http.get(url).subscribe((data)=>{
       this.slides = [];
       if(data['status']){

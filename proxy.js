@@ -1,11 +1,9 @@
 const PROXY_CONFIG = [
     {
         context: [
-            "/members",
-            "/events",
-            "/participants",
+            "/api"
         ],
-        target: "http://localhost:3000",
+        target: "http://codefoster.club",
         secure: false
     }
 ]
