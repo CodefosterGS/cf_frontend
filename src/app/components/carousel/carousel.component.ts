@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-carousel',
@@ -7,17 +8,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
+    this.getAndSetCarouselData();
   }
 
-  slideConfig = {'slidesToShow': 1, 'slidesToScroll': 1, 'autoplay':true};
-  slides = [
-  {img:"/assets/carousel/coding.png",date:"29/02/2018",topic:"Github",venue:"Indore",short_desc:"A googd event on blablabla",status:"Register"},
-  {img:"/assets/carousel/coding2.png"},
-  {img:"/assets/carousel/coding3.png"}
+  slideConfig = { 'slidesToShow': 1, 'slidesToScroll': 1, 'autoplay': true };
+  slides:any = [];
 
-  ];
-
+  getAndSetCarouselData() {
+    let url = "/events/featured";
+    this.http.get(url).subscribe((data)=>{
+      this.slides = [];
+      if(data['status']){
+        data['message'].map(event => {
+          let slide: any = {
+            img: event.featured_img,
+            date: event.start_date,
+            topic: event.title
+          }
+          this.slides.push(slide);
+        });
+      }else{
+        console.log("err",data);
+      }
+    });
+  }
 }

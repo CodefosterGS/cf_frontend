@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { SlickModule } from 'ngx-slick';
 
@@ -45,9 +46,10 @@ const appRoutes: Routes =[
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    SlickModule.forRoot()
+    SlickModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
