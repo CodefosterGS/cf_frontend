@@ -7,13 +7,29 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <app-root></app-root>
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
-<script src="https://unpkg.com/slick-carousel@1.6.0/slick/slick.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+  <script src="https://unpkg.com/slick-carousel@1.6.0/slick/slick.js"></script>
+<script>
+  $(document).ready(function() {
+  $(window).scroll(function () { 
 
+    console.log($(window).scrollTop());
+    if ($(window).scrollTop() > 80) {
+      $('.header-content').css({"position":"fixed","top":"0","z-index":"10","width":"93%"});
+    }
+
+    if ($(window).scrollTop() < 80) {
+      $('.header-content').css({"position":"static","z-index":"0","width":"100%"});
+    }
+  });
+});
+  </script>
 </body>
 </html>

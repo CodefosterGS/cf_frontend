@@ -1,23 +1,200 @@
 #golden_circle{
-    width:80%;
+    width:99%;
     margin:auto;
+    display:flex;
+    flex-direction: column;
+}
+.section-div{
+    margin-top:3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 #why{
-    display:flex;
 
 }
 #what{
-    display:flex;
+
 
 }
 #how{
-    display:flex;
-
+  
 }
 .heading{
-    font-size:50px;
+border-radius: 50%;
+width:30%;
+height:100%;
 }
 .content{
     text-align: justify;
-    width:50%;
+    width:60%;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+    line-height: 2.5rem;
+
 }
+
+#map {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 40px 0;
+   }
+   iframe {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+   }
+   #contact {
+    box-sizing: border-box;
+    position: absolute;
+    left: 20px;
+    height: 400px;
+    width: 40%;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px;
+    border-radius:2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+  
+  .info p {
+    text-align:center;
+    color: #999;
+    text-transform:none;
+    font-weight:600;
+    font-size:15px;
+    margin-top:2px
+  }
+  
+  .info i {
+    color:#F6AA93;
+  }
+  form h1 {
+    font-size: 25px;
+    color: white;
+    padding: 0;
+    margin: auto;
+    text-shadow: none; 
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    margin: 5% auto;
+    overflow: hidden;
+  }
+  
+  p span {
+    color: #F00;
+  }
+  
+ .form-group p {
+    margin: 0px;
+    font-weight: 500;
+    color:white;
+  }
+ 
+  
+  input {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #eee;
+    margin-bottom: 5px;
+    width: 75%;
+    height: 40px;
+    float: left;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration:inherit
+  }
+  
+  textarea {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #EEE;
+    margin-bottom: 5px;
+    width: 75%;
+    height: 40px; 
+    float: left;
+    padding: 0;
+    resize: none;
+  }
+  
+  .form-group {
+    overflow: hidden;
+    clear: both;
+  }
+  
+  .icon-case {
+    width: 35px;
+    float: left;
+    border-radius: 5px 0px 0px 5px;
+    background:#eeeeee;
+    height:42px;
+    position: relative;
+    text-align: center;
+    line-height:40px;
+  }
+  
+  i {
+    color:#555;
+  }
+  
+ 
+  
+  .bouton-contact{
+    background-color: #81BDA4;
+    color: #FFF;
+    text-align: center;
+    width: 40%;
+    border:0;
+    padding: 17px 25px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  
+  .leftcontact {
+    width:49.5%; 
+    float:left;
+    border-right: 1px dotted #CCC;
+    box-sizing: border-box;
+    padding: 0px 15px 0px 0px;
+  }
+  
+  .rightcontact {
+    width:49.5%;
+    float:right;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 15px;
+  }
+  
+  .validation {
+    display:none;
+    margin: 0 0 10px;
+    font-weight:400;
+    font-size:13px;
+    color: #DE5959;
+  }
+  
+  #sendmessage {
+    border:1px solid #fff;
+    display:none;
+    text-align:center;
+    margin:10px 0;
+    font-weight:600;
+    margin-bottom:30px;
+    background-color: #EBF6E0;
+    color: #5F9025;
+    border: 1px solid #B3DC82;
+    padding: 13px 40px 13px 18px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.03);
+  }
+  
+  #sendmessage.show,.show  {
+    display:block;
+  }
