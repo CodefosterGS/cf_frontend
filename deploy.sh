@@ -3,7 +3,7 @@ cd ~
 rm -rf cf_frontend
 git clone https://github.com/CodefosterGS/cf_frontend.git
 cd ./cf_frontend
-npm cache clean 
+npm cache verify 
 npm install
 ng build --prod --build-optimizer
 rm -rf /var/www/codefoster/public
