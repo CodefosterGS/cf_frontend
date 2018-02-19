@@ -1,4 +1,4 @@
-ssh -tt ubuntu@codefoster.club <<EOF
+ssh -tt -i /home/ubuntu/.ssh/id_rsa.pub ubuntu@codefoster.club <<EOF
   cd ~
   git clone https://github.com/CodefosterGS/cf_frontend.git build
   cd build
