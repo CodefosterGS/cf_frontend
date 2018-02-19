@@ -5,6 +5,6 @@ ssh -tt ubuntu@codefoster.club <<EOF
   npm install
   ng build --prod --build-optimizer
   rm -rf /var/www/codefoster/public
-  mv -r /build/. /var/www/codefoster/public
+  mv /build/. /var/www/codefoster/public
   exit
 EOF
