@@ -1,5 +1,5 @@
-npm install
-ng build --prod --build-optimizer
+sudo npm install
+sudo ng build --prod --build-optimizer
 ssh ubuntu@codefoster.club <<EOF
   cd /var/www/codefoster
   rm -rf public
