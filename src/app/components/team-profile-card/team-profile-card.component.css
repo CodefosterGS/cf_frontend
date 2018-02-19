@@ -44,4 +44,14 @@
   p{
     margin:2px;
   }
+
+  @media only screen and (max-width: 700px){
+    .card-profile-candidate-everything{
+    width:40%;
+    flex-wrap: wrap;
+    }
+    .card-profile-candidate-everything{
+      width:95%;
+      }
+  }
   
