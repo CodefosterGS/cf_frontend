@@ -1,8 +1,10 @@
-sudo npm install
-sudo ng build --prod --build-optimizer
 ssh ubuntu@codefoster.club <<EOF
-  cd /var/www/codefoster
-  rm -rf public
+  cd ~
+  git clone https://github.com/CodefosterGS/cf_frontend.git build
+  cd build
+  npm install
+  ng build --prod --build-optimizer
+  rm -rf /var/www/codefoster/public
+  mv -r /build/. /var/www/codefoster/public
   exit
 EOF
-scp -rp ./dist ubuntu@codeofster.club:/var/www/codefoster/public
