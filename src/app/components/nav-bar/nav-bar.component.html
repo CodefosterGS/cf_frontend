@@ -2,23 +2,23 @@
 
     <nav class="header-nav">
       <div id="logo">
-        <img src="/assets/cf_logo_mini_hr.png"/>
+        <a routerLink="/"><img src="/assets/cf_logo_mini_hr.png"/></a>
       </div>
       <ul class="menu-items">
         <li class="menu-item">
-          <a routerLink="/"  class="link link--mallki" href="#" data-letters="Home" href="events" >Home</a>
+          <a routerLink="/" routerLinkActive="active" class="link link--mallki"  data-letters="Home" >Home</a>
         </li>
         <li class="menu-item">
-          <a href="." class="link link--mallki" href="#" data-letters="Events" href="events" >Events</a>
+          <a routerLink="/events" class="link link--mallki" href="#" data-letters="Events">Events</a>
         </li>
         <li class="menu-item">
-            <a href="." class="link link--mallki" href="#" data-letters="Team" href="events" >Team</a>
+            <a routerLink="/team" class="link link--mallki" data-letters="Team">Team</a>
           </li>
         <li class="menu-item">
           <a href="#contact_us" class="link link--mallki" data-letters="Contact" >Contact</a>
         </li>
         <li class="menu-item">
-            <a class="link link--mallki" href="#" data-letters="Project" >Project</a>
+            <a class="link link--mallki" routerLink="/projects" data-letters="Project" >Project</a>
           </li>
       </ul>
     </nav>
