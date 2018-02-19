@@ -1,5 +1,4 @@
-/bin/bash su ubuntu
-ssh -o StrictHostKeyChecking=ubuntu@codefoster.club <<EOF
+ssh ubuntu@codefoster.club <<EOF
   cd ~
   git clone https://github.com/CodefosterGS/cf_frontend.git build
   cd build
