@@ -32,6 +32,7 @@ header
   justify-content: center;
   color: #81878b; 
   list-style-type: none;
+  padding: 0 !important;
 }
 img{
   display: inline;
@@ -43,7 +44,8 @@ img{
   width: 30%;
   text-align: center;
   font-size: 1.5em;
-  border-right: 1px solid #bdc3c7; 
+  border-right: 1px solid #bdc3c7;
+  padding: 0 !important;
 }
 .data li:last-child 
 {
@@ -89,10 +91,17 @@ input[type=submit]:hover {
 div {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 5px;
 }
 form{
   display: none;
+}
+button{
+  border:none;
+outline:none;
+background: transparent;
+border: 2px solid black;
+padding: 10px 15px;
 }
 
 @media screen and (max-width:750px) {
@@ -102,6 +111,9 @@ form{
   }
   .data li {
     border: none;
-    width: 50%;
+    width: 100%;
+  }
+  img{
+    height:60vh;
   }
 }
