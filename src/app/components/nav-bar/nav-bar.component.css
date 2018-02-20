@@ -38,7 +38,7 @@ ul li {
     padding:0 1rem;
     font-size: 1rem;
     text-transform: uppercase;
-    font-family: pirulen;
+    /* font-family: pirulen; */
 }
 
 a{
@@ -127,8 +127,136 @@ a{
 	-webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 }
+
+.menuButton {
+	padding:34px 0;
+	position:absolute;
+	right:20px;
+	z-index: 12;
+	display: none;
+  }
+  
+  .btn {
+	display:block;
+	height:7px;
+	width:50px;
+	z-index:12;
+	margin-left:10px;
+	background:#000;
+	position:relative;
+	-moz-transition-duration: .2s;
+	-o-transition-duration: .2s;
+	-webkit-transition-duration: .2s;
+	transition-duration: .2s;
+  }
+  
+  .btn::before {
+	  content:'';
+	  position:absolute;
+	  top:-15px;
+	  left:0;
+	  width:50px;
+	  height:7px;
+	  background:black;
+	  -moz-transition-duration: .2s;
+	  -o-transition-duration: .2s;
+	  -webkit-transition-duration: .2s;
+	  transition-duration: .2s;
+  }
+	
+  .btn::after {
+	  content:'';
+	  position:absolute;
+	  top:15px;
+	  left:0;
+	  width:50px;
+	  height:7px;
+	  background:black;
+	  -moz-transition-duration: .2s;
+	  -o-transition-duration: .2s;
+	  -webkit-transition-duration: .2s;
+	  transition-duration: .2s;
+  }
+  
+  
+  .activeBtn {
+	background:transparent;
+  }
+  
+  .activeBtn::before {
+	  -webkit-transform:rotate(45deg);
+	  top:0;
+  }
+	
+  .activeBtn::after {
+	  -webkit-transform:rotate(-45deg);
+	  top:0;
+  }
+  
+  #overmenu{
+	  position: fixed;
+	  top:0;
+	  left:0;
+	  background:rgba(0,0,0,0.5);
+	  width:100%;
+	  margin-left:-100%;
+	  height:100%;
+	  z-index: 10;
+	  opacity:1;
+  }
+  
+  #overmenu span{
+	  padding:5px 7px;
+  }
+  
+  #overmenu ul {
+	  position: relative;
+	  display:flex;
+	  flex-direction: column;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%,-50%);
+	  -ms-transform: translate(-50%,-50%);
+	  transform: translate(-50%,-50%);
+  }
+  
+  #overmenu a {
+	  color:#fff;
+	  font-size: 50px;
+	  font-weight: bold;
+	  z-index: 12;
+	  text-decoration:none;
+  }
+  
+  
+  #overmenu li {
+	  list-style: none;
+	  padding: 10px;
+	  margin-bottom: 5%;
+	  text-align: center;
+  }
+  
+  .open {
+	  left:200px;
+  }
+  
+  ::selection {
+	background: rgba(255,255,255, 0.99); /* WebKit/Blink Browsers */
+	color: #EC6B56;
+  }
+  ::-moz-selection {
+	background: rgba(255,255,255, 0.99); /* Gecko Browsers */
+	color: #EC6B56;
+  }
+  ::-webkit-selection {
+	background: rgba(255,255,255, 0.99); /* IE */
+	color: #EC6B56;
+  }
 @media screen and (max-width:700px){
-	ul{
+	.menu-items{
 		display:none;
+	}
+	.menuButton{
+		display: block;
 	}
 }

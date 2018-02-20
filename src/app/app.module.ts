@@ -7,7 +7,7 @@ import { SlickModule } from 'ngx-slick';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ExperimentComponent } from './components/experiment/experiment.component';
+// import { ExperimentComponent } from './components/experiment/experiment.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
@@ -19,10 +19,10 @@ import { DescriptionComponent } from './components/description/description.compo
 
 const appRoutes: Routes =[
   {path:'',component: HomePageComponent,pathMatch:'full'},
-  {path:'test',component:ExperimentComponent, pathMatch:'full'},
+  // {path:'test',component:ExperimentComponent, pathMatch:'full'},
   {path:'about',component:AboutPageComponent, pathMatch:'full'},
   {path:'events',component:EventsPageComponent, pathMatch:'full'},
-  {path:'experiment',component:ExperimentComponent, pathMatch:'full'}
+  // {path:'experiment',component:ExperimentComponent, pathMatch:'full'}
   
 ]
 
@@ -31,7 +31,7 @@ const appRoutes: Routes =[
   declarations: [
     AppComponent,
     FooterComponent,
-    ExperimentComponent,
+    // ExperimentComponent,
     HomePageComponent,
     NavBarComponent,
     CarouselComponent,
