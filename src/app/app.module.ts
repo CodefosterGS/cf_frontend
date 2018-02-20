@@ -21,7 +21,7 @@ const appRoutes: Routes =[
   {path:'',component: HomePageComponent,pathMatch:'full'},
   // {path:'test',component:ExperimentComponent, pathMatch:'full'},
   {path:'about',component:AboutPageComponent, pathMatch:'full'},
-  {path:'events',component:EventsPageComponent, pathMatch:'full'},
+  {path:'events',component:DescriptionComponent, pathMatch:'full'},
   // {path:'experiment',component:ExperimentComponent, pathMatch:'full'}
   
 ]

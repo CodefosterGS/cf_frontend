@@ -90,13 +90,16 @@ section{
     color: white;
 }
 
-@media screen and (max-width:700){
+@media screen and (max-width:700px){
     .featured-post-title{
-        font-size:2rem;
+        font-size: 1rem !important;
     }
     .featured-post-content .featured-post-meta {
-        font-size: 1rem;
+        font-size: 0.5rem;
         margin-top: 1rem 0.5rem 1rem 0.5rem;
         
+    }
+    .featured-post-content{
+        padding:0.3rem;
     }
 }
