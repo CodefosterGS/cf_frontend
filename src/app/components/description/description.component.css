@@ -26,20 +26,24 @@ header
 .data 
 {
   margin-top: .6em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   color: #81878b; 
+  list-style-type: none;
 }
 img{
   display: inline;
-  width: 1280px;
-  height: 461px;
+  width: 100%;
+  height: auto;
 }
 .data li 
 {
-  width: 32%;
+  width: 30%;
   text-align: center;
-  display: inline-block;
   font-size: 1.5em;
-  border-right: solid 1px #bdc3c7; 
+  border-right: 1px solid #bdc3c7; 
 }
 .data li:last-child 
 {
@@ -89,4 +93,15 @@ div {
 }
 form{
   display: none;
+}
+
+@media screen and (max-width:750px) {
+  .data{
+    flex-direction: column;
+    align-items: center;
+  }
+  .data li {
+    border: none;
+    width: 50%;
+  }
 }

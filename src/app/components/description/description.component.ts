@@ -20,7 +20,7 @@ export class DescriptionComponent implements OnInit {
   }
   description: any;
   getAndSetDescriptionData() {
-    let url = "api/events/5a897e3cb433f10b7daad0c4";
+    let url = "api/events/5a8c06d0f02b72190b19c981";
     this.http.get(url).subscribe((data) => {
       this.description = [];
       console.log(data)
@@ -29,7 +29,7 @@ export class DescriptionComponent implements OnInit {
 
         let description: any = {
           img: data['message'].featured_img,
-          dates:data['message'].start_date,
+          dates:data['message'].start_data,
           topic:data['message'].title,
           datee:data['message'].end_date,
           desc:data['message'].desc,
