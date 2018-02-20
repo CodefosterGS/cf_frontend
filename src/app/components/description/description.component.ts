@@ -35,8 +35,7 @@ export class DescriptionComponent implements OnInit {
           desc:data['message'].desc,
           paid:data['message'].paid,
           amount:data['message'].amount,
-          venue :data['message'].venue,
-          active :data['message'].active
+          venue :data['message'].venue
         }
         this.description=description;
       } else {
