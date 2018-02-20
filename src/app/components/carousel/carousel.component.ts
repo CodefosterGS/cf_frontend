@@ -14,7 +14,7 @@ export class CarouselComponent implements OnInit {
     this.getAndSetCarouselData();
   }
 
-  slideConfig = { 'slidesToShow': 1, 'slidesToScroll': 1, 'autoplay': true };
+  slideConfig = { 'slidesToShow': 1, 'slidesToScroll': 1, 'autoplay': false };
   slides:any = [];
 
   getAndSetCarouselData() {
