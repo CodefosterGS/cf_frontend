@@ -14,8 +14,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { EventsPageComponent } from './pages/events-page/events-page.component';
 import { TeamProfileCardComponent } from './components/team-profile-card/team-profile-card.component';
-import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { DescriptionComponent } from './components/description/description.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 const appRoutes: Routes =[
   {path:'',component: HomePageComponent,pathMatch:'full'},
@@ -39,9 +39,9 @@ const appRoutes: Routes =[
     CarouselComponent,
     EventsPageComponent,
     TeamProfileCardComponent,
-    ContactFormComponent,
     FooterComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

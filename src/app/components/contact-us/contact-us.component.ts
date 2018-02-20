@@ -11,5 +11,8 @@ export class ContactUsComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  onSubmit() {
+      console.log("Form Submitted!");
+      return false;
+  }
 }
