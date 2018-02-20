@@ -1,11 +1,9 @@
 <div class="container">
   <div class="wrapper">
     <header>
-      dfsag
       <h1>{{description.topic}}</h1>
       <div class="bio">
-        daf
-        <img src="" alt="background" class="bg">
+        <img src="{{description.img}}" alt="background" class="bg">
       </div>
     </header>
 
@@ -13,16 +11,24 @@
       <div class="data">
         <ul>
           <li>
-            {{description.dates}} - {{description.datee}}
-            <span>Times</span>
+            {{description.dates}}
+            <span>Start Date</span>
           </li>
           <li>
-              {{description.amount}}
+            {{description.amount}}
             <span>amount</span>
           </li>
           <li>
             {{description.venue}}
             <span>Venue</span>
+          </li>
+          <li>
+            {{description.datee}}
+            <span>End Date</span>
+          </li>
+          <li>
+            {{description.active}}
+            <span>Status</span>
           </li>
 
         </ul>
@@ -35,9 +41,12 @@
   </div>
   <div *ngIf="description.active">
     <div>
-      <button (click)="form()">Register</button>
+      <a href="https://www.townscript.com/e/flickshot-v2-5v5-300044">
+        <button>Register</button>
+      </a>
+      <button>More Info</button>
     </div>
-    <div>
+    <!--<div>
       <form action="" id="registerform">
         <div>
           <label for="name"> Name:</label>
@@ -53,6 +62,6 @@
         </div>
         <input type="submit" value="Submit">
       </form>
-    </div>
+    </div>-->
   </div>
 </div>

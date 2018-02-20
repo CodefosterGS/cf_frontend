@@ -11,15 +11,15 @@
     justify-content: space-around;
 }
 #why{
-
+  font-size: 120%;
 }
 #what{
-
-
+  font-size: 120%;
 }
 #how{
-  
+  font-size: 120%;  
 }
+
 .heading{
 border-radius: 50%;
 width:30%;
@@ -35,7 +35,9 @@ height:100%;
     line-height: 2.5rem;
 
 }
-
+body{
+  background-image: url('/assets/background.jpg');
+}
 #map {
     position: relative;
     top: 0px;
@@ -188,6 +190,7 @@ height:100%;
       width: 95%;
     }
 
+
   .bouton-contact{
     margin-top:5px;
   }
@@ -200,4 +203,23 @@ height:100%;
   .section-div:nth-of-type(1), .section-div:nth-of-type(3){
     flex-direction: column-reverse;
   }
+  }
+  @media screen and (max-width: 500px) {
+    iframe{
+      visibility:hidden;
+      }
+    #contact{
+      left:50%;
+      transform: translateX(-50%);
+      width: 95%;
+    }
+      .heading{
+        margin: auto;
+        width: 60%;
+      }
+    
+    .content{
+      width:100% ;
+      
+    }
   }
