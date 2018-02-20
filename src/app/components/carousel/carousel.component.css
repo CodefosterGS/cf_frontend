@@ -102,4 +102,7 @@ section{
     .featured-post-content{
         padding:0.3rem;
     }
+    img{
+        height: 60vh;
+    }
 }

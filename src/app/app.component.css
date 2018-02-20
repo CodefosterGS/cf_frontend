@@ -1,0 +1,10 @@
+.mainContent{
+    text-align:center;
+    margin: 0 3rem;
+}
+
+@media screen and (max-width: 700px) {
+    .mainContent{
+        margin: 0 2rem;
+    }
+}
