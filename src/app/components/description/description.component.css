@@ -60,6 +60,17 @@ img{
   margin-top: .6em;
   font-weight:700;
 }
+.button {
+  background-color: #3e3e3e; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 /*//////////////////////////*/
 input[type=text], select {
   width: 50%;
@@ -117,3 +128,5 @@ padding: 10px 15px;
     height:60vh;
   }
 }
+
+
